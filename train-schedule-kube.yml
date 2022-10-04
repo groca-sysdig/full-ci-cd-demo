@@ -35,5 +35,7 @@ spec:
       - name: train-schedule
         image: grocamador/cicd-demo:latest
         imagePullPolicy: "Always"
+        securityContext:
+          allowPrivilegeEscalation: true
         ports:
         - containerPort: 8080
