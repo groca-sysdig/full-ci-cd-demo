@@ -29,6 +29,9 @@ stages {
 
  
       stage('Scanning Image with Sysdig') {
+	     when {
+                branch 'master'
+            }
         steps {
             
             sh "echo ${DOCKER_IMAGE_NAME}:${env.BUILD_NUMBER} > sysdig_secure_images"
