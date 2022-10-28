@@ -15,6 +15,7 @@ spec:
 
 
 
+
 ---
 apiVersion: apps/v1
 kind: Deployment
@@ -39,3 +40,5 @@ spec:
         imagePullPolicy: "Always"
         ports:
         - containerPort: 8080
+        securityContext:
+          runAsUser: 1000
