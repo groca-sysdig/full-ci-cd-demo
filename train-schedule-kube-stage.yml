@@ -23,7 +23,7 @@ metadata:
   labels:
     app: train-schedule-stage
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: train-schedule-stage
